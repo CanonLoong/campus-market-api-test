@@ -5,7 +5,7 @@ BASE_URL = "http://localhost:8080"
 
 def test_order_invalid_delivery(buyer_token, seller_token):  # 👈 同时传入买家和卖家 token
     # 1. 买家创建一个订单（状态 0 待交易）
-    goods_id = 3  # ⚠️ 换成真实在售商品 id
+    goods_id = 5  # ⚠️ 换成真实在售商品 id
     create_url = BASE_URL + "/api/order/add"
     headers_buyer = {"X-Token": buyer_token}
     create_data = {
